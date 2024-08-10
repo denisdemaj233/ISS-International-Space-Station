@@ -9,29 +9,36 @@ public class Main {
         System.out.println("                   INTERNATIONAL SPACE STATION");
         System.out.println("---------------------------------------------------------------------");
 
-        System.out.println("Functionalities:");
-        System.out.println("1. ISS speed calculation");
-        System.out.println("2. Upcoming ISS runs for a specific locatiNumber of people in space within the ISSon");
-        System.out.println("3. Number of people in space within the ISS ");
-        System.out.println("4. Exit");
-        System.out.print("Choose: ");
-        Scanner scanner = new Scanner(System.in);
-        int choose= scanner.nextInt();
+        int choose;
 
-        switch (choose){
-            case 1:
-                System.out.println("ISS speed calculation");
-                break;
-            case 2:
-                System.out.println("Upcoming ISS runs for a specific location");
-                break;
-            case 3:
-                System.out.println("Number of people in space within the ISS");
-                break;
-            default:
-                System.out.println("Ju lutem zgjidhni 1,2 ose 3");
-                break;
+        do {
+            System.out.println("Functionalities:");
+            System.out.println("1. ISS speed calculation");
+            System.out.println("2. Upcoming ISS runs for a specific locatiNumber of people in space within the ISSon");
+            System.out.println("3. Number of people in space within the ISS ");
+            System.out.println("4. Exit");
+            System.out.print("Choose: ");
+            Scanner scanner = new Scanner(System.in);
+            choose = scanner.nextInt();
 
-        }
+            switch (choose) {
+                case 1:
+                    System.out.println("ISS speed calculation");
+                    break;
+                case 2:
+                    System.out.println("Upcoming ISS runs for a specific location");
+                    break;
+                case 3:
+                    System.out.println("Number of people in space within the ISS");
+                    break;
+                case 4:
+                    System.exit(0);
+                default:
+                    System.out.println("Ju lutem zgjidhni 1,2 ose 3");
+                    break;
+
+            }
+
+        }while (choose!=4);
     }
 }
