@@ -34,7 +34,7 @@ public class Main {
                 case 4:
                     System.exit(0);
                 default:
-                    System.out.println("Ju lutem zgjidhni 1,2 ose 3");
+                    System.out.println("Please choose one of the options above");
                     break;
 
             }
