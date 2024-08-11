@@ -3,6 +3,7 @@ package org.hibernate.dao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import org.hibernate.config.Jpa;
+import org.hibernate.model.SpaceResponse;
 
 public class SpaceDao {
     public void saveSpace(SpaceResponse spaceResponse){

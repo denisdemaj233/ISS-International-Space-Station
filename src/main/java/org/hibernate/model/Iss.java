@@ -1,4 +1,4 @@
-package org.hibernate.dao;
+package org.hibernate.model;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

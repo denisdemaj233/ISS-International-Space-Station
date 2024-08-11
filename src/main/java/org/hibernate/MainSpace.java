@@ -1,15 +1,17 @@
 package org.hibernate;
 
+import org.hibernate.config.HttpCall;
 import org.hibernate.dao.*;
-import org.hibernate.httpcalls.HttpClientCalls;
-
-import java.util.UUID;
+import org.hibernate.model.Iss;
+import org.hibernate.model.SpaceResponse;
 
 public class MainSpace {
     public static void main(String[] args) {
 
         try {
-            SpaceResponse spaceResponse = HttpClientCalls.getSpace();
+            String url = "http://api.open-notify.org/iss-now.json";
+            SpaceResponse spaceResponse = HttpCall.sendGetRequest(url, SpaceResponse.class);
+
             System.out.println("Timestamp: " + spaceResponse.getTimestamp());
             System.out.println("Message: " + spaceResponse.getMessage());
             System.out.println("ISS Position:");
@@ -18,7 +20,7 @@ public class MainSpace {
 
 
             SpaceResponse spaceResponse1 = new SpaceResponse();
-            //spaceResponse1.setId(UUID.randomUUID().toString());
+
             spaceResponse1.setMessage(spaceResponse.getMessage());
             spaceResponse1.setTimestamp(spaceResponse.getTimestamp());
 

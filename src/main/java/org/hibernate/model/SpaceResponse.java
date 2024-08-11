@@ -1,8 +1,6 @@
-package org.hibernate.dao;
+package org.hibernate.model;
 
-import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
