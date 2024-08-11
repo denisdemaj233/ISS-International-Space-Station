@@ -11,9 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class SpaceResponse {
-    @Id
-    private int id;
+public class SpaceResponse extends BaseModel{
+
     private Long timestamp;
     private String message;
     private Iss iss_position;

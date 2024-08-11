@@ -3,6 +3,8 @@ package org.hibernate;
 import org.hibernate.dao.*;
 import org.hibernate.httpcalls.HttpClientCalls;
 
+import java.util.UUID;
+
 public class MainSpace {
     public static void main(String[] args) {
 
@@ -16,7 +18,7 @@ public class MainSpace {
 
 
             SpaceResponse spaceResponse1 = new SpaceResponse();
-            spaceResponse1.setId(1);
+            //spaceResponse1.setId(UUID.randomUUID().toString());
             spaceResponse1.setMessage(spaceResponse.getMessage());
             spaceResponse1.setTimestamp(spaceResponse.getTimestamp());
 
