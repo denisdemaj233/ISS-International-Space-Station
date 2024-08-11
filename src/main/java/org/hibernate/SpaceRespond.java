@@ -9,7 +9,7 @@ public class SpaceRespond {
     private static final String API_KEY = "c6ba5ab0fcb6f46d2d9ef4e5f084dbf8";  // Replace with your API key
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
-    public static SpaceRespond getWeather(double lat, double lon) throws Exception {
+    public static SpaceRespond getSpace(double lat, double lon) throws Exception {
         String url = String.format("%s?lat=%f&lon=%f&appid=%s", BASE_URL, lat, lon, API_KEY);
 
         HttpClient client = HttpClient.newHttpClient();

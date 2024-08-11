@@ -1,5 +1,7 @@
 package org.hibernate;
 
+import org.hibernate.config.Jpa;
+
 import java.util.Scanner;
 
 public class Main {
@@ -32,6 +34,7 @@ public class Main {
                     System.out.println("Number of people in space within the ISS");
                     break;
                 case 4:
+                    Jpa.shutdown();
                     System.exit(0);
                 default:
                     System.out.println("Please choose one of the options above");

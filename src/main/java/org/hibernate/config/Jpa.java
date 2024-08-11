@@ -1,9 +1,9 @@
-package config;
+package org.hibernate.config;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import jakarta.transaction.Transaction;
+
 
 public class Jpa {
     private static final EntityManagerFactory entityManagerFactory = buildEntityFactoryManager();
