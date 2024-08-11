@@ -29,7 +29,6 @@ public class Main {
                     System.out.println("ISS speed calculation");
                     break;
 
-
                 case 2:
                     System.out.println("Number of people in space within the ISS");
                     break;
