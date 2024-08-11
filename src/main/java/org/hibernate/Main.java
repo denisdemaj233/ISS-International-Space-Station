@@ -1,6 +1,8 @@
 package org.hibernate;
 
 import org.hibernate.config.Jpa;
+import org.hibernate.functionality.NumberOfPeopleFunction;
+import org.hibernate.functionality.SpaceFunction;
 
 import java.util.Scanner;
 
@@ -16,9 +18,8 @@ public class Main {
         do {
             System.out.println("Functionalities:");
             System.out.println("1. ISS speed calculation");
-            System.out.println("2. Upcoming ISS runs for a specific location");
-            System.out.println("3. Number of people in space within the ISS ");
-            System.out.println("4. Exit");
+            System.out.println("2. Number of people in space within the ISS ");
+            System.out.println("3 Exit");
             System.out.print("Choose: ");
             Scanner scanner = new Scanner(System.in);
             choose = scanner.nextInt();
@@ -26,15 +27,12 @@ public class Main {
             switch (choose) {
                 case 1:
 
-                    System.out.println("ISS speed calculation");
+                    System.out.println("ISS speed is: "+ SpaceFunction.speedCalculation()+"\n");
                     break;
                 case 2:
-                    System.out.println("Upcoming ISS runs for a specific location");
+                    System.out.println("Number of people in space within the ISS: "+ NumberOfPeopleFunction.numberOfPeopleInSpace()+"\n");
                     break;
                 case 3:
-                    System.out.println("Number of people in space within the ISS");
-                    break;
-                case 4:
                     Jpa.shutdown();
                     System.exit(0);
                 default:
@@ -43,6 +41,6 @@ public class Main {
 
             }
 
-        }while (choose!=4);
+        }while (choose!=3);
     }
 }
