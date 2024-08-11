@@ -2,7 +2,6 @@ package org.hibernate.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
-import org.hibernate.User;
 import org.hibernate.config.Jpa;
 
 public class UserDao {

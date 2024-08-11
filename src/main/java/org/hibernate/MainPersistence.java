@@ -1,5 +1,6 @@
 package org.hibernate;
 
+import org.hibernate.dao.User;
 import org.hibernate.dao.UserDao;
 
 public class MainPersistence {
@@ -10,6 +11,8 @@ public class MainPersistence {
 
         UserDao userDao = new UserDao();
         userDao.saveUser(user);
+
+
 
 
     }

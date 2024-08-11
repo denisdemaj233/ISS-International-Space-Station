@@ -1,4 +1,4 @@
-package org.hibernate;
+package org.hibernate.dao;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
