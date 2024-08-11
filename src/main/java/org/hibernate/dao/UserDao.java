@@ -17,7 +17,7 @@ public class UserDao {
                 transaction.commit();
             } catch (Exception e) {
                 if (transaction != null && transaction.isActive()) {
-                    transaction.rollback();
+                  transaction.rollback();
                 }
             }
         }
