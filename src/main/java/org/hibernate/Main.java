@@ -16,7 +16,7 @@ public class Main {
         do {
             System.out.println("Functionalities:");
             System.out.println("1. ISS speed calculation");
-            System.out.println("2. Upcoming ISS runs for a specific location");
+            System.out.println("2. Upcoming ISS runs for a specific locatiNumber of people in space within the ISSon");
             System.out.println("3. Number of people in space within the ISS ");
             System.out.println("4. Exit");
             System.out.print("Choose: ");
