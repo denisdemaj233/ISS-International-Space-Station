@@ -25,6 +25,7 @@ public class Main {
 
             switch (choose) {
                 case 1:
+
                     System.out.println("ISS speed calculation");
                     break;
                 case 2:
